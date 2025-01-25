@@ -1,0 +1,368 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Open Sans", serif;
+    margin: 0;
+    padding: 0;
+}
+
+header .jumbotron {
+    background-color: #1230AE;
+    border-bottom-right-radius: 9999px;
+    box-shadow: 0 25px 20px 0 #A6AEBF;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+header  .nav-logo img {
+    height: 100px;
+    object-fit: cover;
+    object-position: center;
+    
+}
+
+
+header .navbar-container {
+    background-color: #1230AE;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 5;
+    position: sticky;
+    top: 0;
+}
+
+header .navbar-container .nav-logo {
+    position: relative;
+    right: 300px;
+}
+
+header .nav-list ul  {
+    height: 100px;
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding-left: 0;
+    column-gap: 3rem;
+    list-style-type: none;
+}
+
+header .nav-list li a{
+    text-decoration: none;
+    color: white;
+    border-radius: 9999px;
+    transition:  all 0.5s ease-in-out;
+    padding: 0.2rem 0.5rem;
+    font-size: 0.8rem;
+}
+
+header .nav-list li a:hover {
+    background-color: #6C48C5;
+}
+
+header h1 {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: transparent;
+    -webkit-text-stroke: 2px  #bfbfbc;
+    margin: 0;
+
+}
+
+header h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #FBFBFB;
+    width: 400px;
+    margin: 0;
+
+}
+
+header p {
+    font-size: 0.7rem;
+    color: #FBFBFB;
+}
+
+header .jumbotron .box-avalaible {
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+}
+
+header .jumbotron .box-avalaible .box{
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: rgb(4, 255, 4);
+}
+
+header .jumbotron .photos img {
+    width: 400px;
+    border-radius: 50%;
+    position: relative;
+    left: 130px;
+    bottom: 80px;
+}
+
+header .jumbotron .photos {
+    height: 400px;
+}
+
+header .jumbotron .value-happy {
+    border-radius: 20px;
+    background-color: #FBFBFB;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 160px;
+    height: 130px;
+    position: relative;
+    top: 250px;
+    left: 50px;
+    z-index: 2;
+}
+
+header .jumbotron .value-happy h2 {
+    color: purple;
+    font-weight: 900;
+    text-align: center;
+    width: 100px;
+
+}
+
+header .jumbotron .value-happy p {
+    color: black;
+    font-weight: 900;
+
+}
+
+main {
+    padding: 20px;
+}
+
+/* Mengatur about me */
+main #about {
+    display: flex;
+    margin-top: 80px;
+    justify-content: center;
+    align-items: center;
+    column-gap: 50px;
+    min-height: 50vh;
+}
+
+main #about .about-left h2 {
+    font-size: 3rem;
+    margin: 0;
+
+}
+
+main #about .about-left p {
+    font-size: 0.8rem;
+    font-weight: 600;
+    width: 450px;
+    margin-bottom: 50px;
+    
+}
+
+main #about .about-left table .tr-color {
+    background-color: #F2F9FF;
+}
+
+main #about .about-right p {
+    width: 500px;
+    font-size: 0.7rem;
+    margin: 0;
+}
+
+main #about .about-right .box-container {
+    border-radius: 15px;
+    border: 3px solid #8174A0;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    margin-top: 30px;
+    width: 70%;
+}
+
+main #about .about-right .box-left, main #about .about-right .box-right {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+}
+
+main #about .about-right .box-left .box-50,
+main #about .about-right .box-left .box-75,
+main #about .about-right .box-right .box-5,
+main #about .about-right .box-right .box-15{
+    border-radius: 15px;
+    border: 5px solid #A888B5;
+    text-align: center;
+    width: 150px;
+    
+}
+
+main #about .about-right .box-left p , main #about .about-right .box-right p {
+    width: 100px;
+    margin-left: 25px;
+    position: relative;
+    bottom: 20px;
+}
+
+/* Mengatur Skills */
+main #skills {
+    display: flex;
+    width: 100%;
+    flex-flow: column wrap;
+    align-content: center;
+    margin-top: 80px;
+    min-height: 50vh;
+}
+
+main #skills .skills-box {
+    display: flex;
+    column-gap: 420px;
+    
+}
+
+main #skills h2 {
+    font-size: 3rem;
+    margin:0;
+}
+
+main #skills .skills-box .skills-logo {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    height: 200px;
+}
+
+main #skills .skills-box h3 {
+    font-size: 1.5rem;
+}
+
+main #skills .skills-logo img {
+    height: 70px;
+    margin-right: 50px;
+}
+
+main #skills .skills-soft .box-wrap{
+    display: flex;
+    column-gap: 20px;
+}
+
+main #skills .skills-soft .box-wrap .box-right {
+    border-left: 2px solid black;
+    padding-left: 20px;
+}
+
+/* Mengatur Portofolio */
+
+main #porto {
+    min-height: 50vh;
+    margin-top: 80px;
+    display: flex;
+    flex-flow: wrap column;
+    justify-content: center;
+    align-content: center;
+}
+
+main #porto h2{
+    font-size: 3rem;
+    margin: 0;
+}
+
+main #porto .box-wrap {
+    display: flex;
+    column-gap: 20px;
+    
+}
+
+main #porto .box-wrap img {
+    width: 500px;
+}
+
+main #porto .box-wrap p {
+    font-size: 1.3rem;
+    margin: 0;
+}
+
+main #porto .box-wrap .box-right .box-4 {
+    margin-top: 60px;
+}
+
+/* Mengatur aside */
+main aside {
+    position: fixed;
+    inset-block: 0;
+    inset-inline-end: 0;
+}
+
+main aside .social-media {
+    height: 100%;
+    display: flex;
+}
+
+main aside .social-media ul {
+    padding: 1.5rem 1rem;
+    border-top-left-radius: 12px;
+    border-bottom-left-radius: 12px;
+    margin: auto;
+    background-color: #155E95;
+    display: flex;
+    flex-flow: column wrap;
+    align-content: center;
+    justify-content: center;
+    gap: 1rem;
+
+}
+
+main aside .social-media ul li {
+    list-style-type: none;
+}
+
+main aside .social-media li a {
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: white;
+    transition: all 0.1s ease-in-out;
+}
+
+main aside .social-media li a:hover {
+    color: #89b1d9;
+}
+
+main aside .social-media li img {
+    width: 50px;
+    border-radius: 50%;
+}
+
+footer {
+    background-color: #000957;
+    color: white;
+    text-align: center;
+    padding: 5px;
+}
+
+@media screen and (max-width: 768px) {
+    header {
+        width: 200px;
+        
+    }
+    main #about {
+        display: flex;
+        flex-flow: column wrap;
+        row-gap: 20px;
+    }
+    main #porto .box-wrap, main #skills .skills-box{
+        flex-flow: column wrap;
+        row-gap: 20px;
+    }
+
+    
+}
